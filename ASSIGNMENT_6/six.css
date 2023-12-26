@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(199, 193, 193);
+}
+.job_container {
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px;
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.form_cotainer{
+    margin: 30px auto;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label,
+.placeholder {
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+input, select, textarea{  
+    padding: 8px  10px;
+    border: none;
+    border-bottom: 1px solid;
+    
+}
+input, select, textarea:focus{
+    outline-color: cadetblue;
+}
+.btn_container{
+    display: flex;
+    justify-content: end;
+    margin: 20px auto;
+}
+button{
+    padding: 6px 10px;
+    background-color: lightblue;
+    border: transparent solid 2px;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid cadetblue;
+    transition: 0.5s ease-in;
+}
+button:hover{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    background-color: cadetblue;
+    border: 2px solid lightblue;
+    color: white;
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+
